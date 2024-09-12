@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "titulo": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "anio": 1967,
+      "editorial": "Sudamericana",
+      "imagen": "ruta/a/imagen1.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Don Quijote de la Mancha",
+      "autor": "Miguel de Cervantes",
+      "anio": 1605,
+      "editorial": "Francisco de Robles",
+      "imagen": "ruta/a/imagen2.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "La sombra del viento",
+      "autor": "Carlos Ruiz Zafón",
+      "anio": 2001,
+      "editorial": "Planeta",
+      "imagen": "ruta/a/imagen3.jpg"
+    }
+  ]
+  

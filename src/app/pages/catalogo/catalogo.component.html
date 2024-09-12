@@ -1,1 +1,10 @@
-<p>catalogo works!</p>
+<div class="catalogo">
+    <div *ngFor="let libro of libros" class="libro-card">
+      <img [src]="libro.imagen" alt="{{ libro.titulo }}" />
+      <h2>{{ libro.titulo }}</h2>
+      <p><strong>Autor:</strong> {{ libro.autor }}</p>
+      <p><strong>Año:</strong> {{ libro.anio }}</p>
+      <p><strong>Editorial:</strong> {{ libro.editorial }}</p>
+    </div>
+  </div>
+  

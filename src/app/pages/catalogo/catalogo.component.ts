@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LibrosService } from '../../libros.service';
+
 
 @Component({
-  selector: 'app-catalogo',
-  standalone: true,
-  imports: [],
+  selector: 'app-catalogo-libros',
   templateUrl: './catalogo.component.html',
-  styleUrl: './catalogo.component.css'
+  styleUrls: ['./catalogo.component.css']
 })
-export class CatalogoComponent {
+export class CatalogoLibrosComponent implements OnInit {
+  libros: any[] = [];
 
+  constructor(private librosService: LibrosService) {}
+
+  ngOnInit(): void {
+    this.librosService.getLibros().subscribe((data) => {
+      this.libros = data;
+    });
+  }
 }
